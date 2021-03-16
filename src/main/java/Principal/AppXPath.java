@@ -33,7 +33,7 @@ public class AppXPath {
 			System.out.println("4.- Obten el numero de productos que sean memorias y de la zona 10");
 			System.out.println("5.- Obten la media de precio de los micros");
 			System.out.println("6.- Obten los datos de los productos cuyo stock minimo sea mayor que su stock actual");
-			System.out.println("7.- Obten el nomnre del producto y el precio de aquellos cuyo stock minimo sea mayor que su stock actual y sean de la zona 40");
+			System.out.println("7.- Obten el nombre del producto y el precio de aquellos cuyo stock minimo sea mayor que su stock actual y sean de la zona 40");
 			System.out.println("8.- Obten el producto mas caro");
 			System.out.println("9.- Obten el producto mas barato de la zona 20");
 			System.out.println("10.- Obten el producto mas caro de la zona 10");
@@ -45,34 +45,34 @@ public class AppXPath {
 			// SEGUN LO QUE HA ELEGIDO EJECUTAREMOS LA FUNCION CORRESPONDIENTE
 			switch (opcion) {
 			case 1:
-				MetodosMenu.obtenLosNodosDenominacionYPrecioDeTodosLosProductos(miConsultaXPath, miResourceIterator);
+				MetodosMenuXPath.obtenLosNodosDenominacionYPrecioDeTodosLosProductos(miConsultaXPath, miResourceIterator);
 				break;
 			case 2:
-				MetodosMenu.obtenLosNodosDeLosProductosQueSeanPlacasBase(miConsultaXPath, miResourceIterator);
+				MetodosMenuXPath.obtenLosNodosDeLosProductosQueSeanPlacasBase(miConsultaXPath, miResourceIterator);
 				break;
 			case 3:
-				MetodosMenu.obtenLosNodosDeLosProductosConPrecioMayorDe60€YDeLaZona20(miConsultaXPath, miResourceIterator);
+				MetodosMenuXPath.obtenLosNodosDeLosProductosConPrecioMayorDe60YDeLaZona20(miConsultaXPath, miResourceIterator);
 				break;
 			case 4:
-				MetodosMenu.obtenElNumeroDeLosProductosQueSeanMemoriasYDeLaZona10(miConsultaXPath, miResourceIterator);
+				MetodosMenuXPath.obtenElNumeroDeLosProductosQueSeanMemoriasYDeLaZona10(miConsultaXPath, miResourceIterator);
 				break;
 			case 5:
-				MetodosMenu.obtenLaMediaDePrecioDeLosMicros(miConsultaXPath, miResourceIterator);
+				MetodosMenuXPath.obtenLaMediaDePrecioDeLosMicros(miConsultaXPath, miResourceIterator);
 				break;
 			case 6:
-				MetodosMenu.obtenLosDatosDeLosProductosCuyoStockMinimoSeaMayorQueSuStockActual(miConsultaXPath, miResourceIterator);
+				MetodosMenuXPath.obtenLosDatosDeLosProductosCuyoStockMinimoSeaMayorQueSuStockActual(miConsultaXPath, miResourceIterator);
 				break;
 			case 7:
-				MetodosMenu.obtenElNombreDelProductoYElPrecioDeAquellosCuyoStockMinimoSeaMayorQueSuStockActualYSeanDeLaZona40(miConsultaXPath, miResourceIterator);
+				MetodosMenuXPath.obtenElNombreDelProductoYElPrecioDeAquellosCuyoStockMinimoSeaMayorQueSuStockActualYSeanDeLaZona40(miConsultaXPath, miResourceIterator);
 				break;
 			case 8:
-				MetodosMenu.obtenElProductoMasCaro(miConsultaXPath, miResourceIterator);
+				MetodosMenuXPath.obtenElProductoMasCaro(miConsultaXPath, miResourceIterator);
 				break;
 			case 9:
-				MetodosMenu.obtenElProductoMasBaratoDeLaZona20(miConsultaXPath, miResourceIterator);
+				MetodosMenuXPath.obtenElProductoMasBaratoDeLaZona20(miConsultaXPath, miResourceIterator);
 				break;
 			case 10:
-				MetodosMenu.obtenElProductoMasCaroDeLaZona10(miConsultaXPath, miResourceIterator);
+				MetodosMenuXPath.obtenElProductoMasCaroDeLaZona10(miConsultaXPath, miResourceIterator);
 			}
 		} while (opcion != 0);
 		// CERRAMOS LA CONEXION A LA BBDD

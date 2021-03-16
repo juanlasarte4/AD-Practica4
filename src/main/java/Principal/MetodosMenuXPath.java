@@ -7,7 +7,7 @@ import org.xmldb.api.base.XMLDBException;
 import org.xmldb.api.modules.XMLResource;
 import org.xmldb.api.modules.XPathQueryService;
 
-public class MetodosMenu {
+public class MetodosMenuXPath {
 
 	// CASO 1
 	public static void obtenLosNodosDenominacionYPrecioDeTodosLosProductos(XPathQueryService miConsultaXPath, ResourceIterator miResourceIterator) {
@@ -36,7 +36,7 @@ public class MetodosMenu {
 	}
 
 	// CASO 3
-	public static void obtenLosNodosDeLosProductosConPrecioMayorDe60€YDeLaZona20(XPathQueryService miConsultaXPath, ResourceIterator miResourceIterator) {
+	public static void obtenLosNodosDeLosProductosConPrecioMayorDe60YDeLaZona20(XPathQueryService miConsultaXPath, ResourceIterator miResourceIterator) {
 		try {
 			miResourceIterator = miConsultaXPath.query("/productos/produc[precio[text() > 60] and cod_zona[text() = 20]]").getIterator();
 			while (miResourceIterator.hasMoreResources()) {
